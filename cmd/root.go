@@ -151,8 +151,8 @@ func setupDatabase() {
 	}
 
 	// Define the application config directory path
-	// This points to ~/.config/password-gen
-	appDir := filepath.Join(homeDir, ".config", "password-gen")
+	// This points to ~/.config/pwgen
+	appDir := filepath.Join(homeDir, ".config", "pwgen")
 
 	// Create the directory if it doesn't exist
 	// os.MkdirAll creates the folder and any missing parents
