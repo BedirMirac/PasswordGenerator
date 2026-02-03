@@ -132,3 +132,30 @@ PasswordGenerator/
 ├── go.sum             # Go module checksums for dependencies
 └── main.go            # Main entry point for the password generator application
 ```
+
+
+## 🤝 Contributing
+
+We welcome contributions! If you have suggestions for improvements, new features, or bug fixes, please open an issue or submit a pull request.
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
+
+## 🙏 Acknowledgments
+
+-   Built with the power of the Go programming language.
+
+## 📞 Support & Contact
+
+-   🐛 Issues: [GitHub Issues](https://github.com/BedirMirac/PasswordGenerator/issues)
+
+---
+
+<div align="center">
+
+**⭐ Star this repo if you find it helpful!**
+
+Made with ❤️ by [BedirMirac](https://github.com/BedirMirac)
+
+</div>
