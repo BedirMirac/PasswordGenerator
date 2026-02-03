@@ -1,11 +1,6 @@
 # pwgen
 <div align="center">
 
-[![GitHub stars](https://img.shields.io/github/stars/BedirMirac/PasswordGenerator?style=for-the-badge)](https://github.com/BedirMirac/PasswordGenerator/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/BedirMirac/PasswordGenerator?style=for-the-badge)](https://github.com/BedirMirac/PasswordGenerator/network)
-[![GitHub issues](https://img.shields.io/github/issues/BedirMirac/PasswordGenerator?style=for-the-badge)](https://github.com/BedirMirac/PasswordGenerator/issues)
-[![GitHub license](https://img.shields.io/github/license/BedirMirac/PasswordGenerator?style=for-the-badge)](LICENSE)
-
 **A simple yet robust command-line tool for generating strong, random passwords.**
 
 </div>
