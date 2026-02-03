@@ -6,7 +6,7 @@ import (
 )
 
 func PassGen() string {
-	const specialChars = "*!@#$%^&"
+	const specialChars = "*!@#$%^&*()-+=[]{}<>"
 	const numbers = "0123456789"
 	const characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 	passOfString := make([]byte, (Length - Numbers - Symbols))
