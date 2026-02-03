@@ -4,7 +4,7 @@ Copyright © 2026 Mirac Bedir  <EMAIL ADDRESS>
 package main
 
 import (
-	"github.com/BedirMirac/passwordGenerator/cmd"
+	"github.com/BedirMirac/pwgen/cmd"
 )
 
 func main() {

@@ -1,4 +1,4 @@
-module github.com/BedirMirac/passwordGenerator
+module github.com/BedirMirac/pwgen
 
 go 1.25.6
 
