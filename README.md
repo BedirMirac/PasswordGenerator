@@ -76,10 +76,10 @@ After building or installing, you can run the `pwgen` command.
 Generate a password with default settings (e.g., a mix of character types and a default length):
 ```bash
 # If built locally
-./passwordgen
+./pwgen
 
 # If installed globally
-passwordgen
+pwgen
 ```
 
 ### Available Options
