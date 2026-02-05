@@ -1,5 +1,5 @@
 /*
-Copyright © 2026 Mirac Bedir  <EMAIL ADDRESS>
+Copyright © 2026 Mirac Bedir
 */
 package main
 
