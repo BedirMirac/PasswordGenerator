@@ -99,6 +99,7 @@ Use flags to customize your password:
 | `--new-pass` | `-p` | To change password with a password that you created | `" "`|
 | `--save` | `-s` | To save the generated password | `false`|
 | `--name` | `-n` | To name the password generated | Date and Time when password created |
+| `--get` | `-g` | To fetch a password not the whole list (with name flag) | `false`|
 
 _Note: If no character types are explicitly enabled, the tool will default to including all types for a robust password._
 
