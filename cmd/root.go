@@ -29,6 +29,7 @@ var ListAll bool = false
 var DoDelete bool = false
 var DoUpdate bool = false
 var AutoGenerateNewPass bool = false
+var GetAPassword bool = false
 
 var (
 	DB     *sql.DB
@@ -44,7 +45,7 @@ var rootCmd = &cobra.Command{
 		listFlag, _ := cmd.Flags().GetBool("vault")
 		deleteFlag, _ := cmd.Flags().GetBool("remove")
 		updateFlag, _ := cmd.Flags().GetBool("update")
-		if saveFlag || listFlag || deleteFlag || updateFlag {
+		if saveFlag || listFlag || deleteFlag || updateFlag || GetAPassword {
 			setupDatabase()
 		}
 
@@ -96,6 +97,8 @@ var rootCmd = &cobra.Command{
 				Update(ID, NewPass)
 			}
 
+		} else if GetAPassword {
+			Select(Name)
 		} else {
 			fmt.Println(Password)
 		}
@@ -140,6 +143,7 @@ func init() {
 	rootCmd.Flags().BoolVarP(&DoUpdate, "update", "u", false, "Would you like to update a password")
 	rootCmd.Flags().BoolVarP(&AutoGenerateNewPass, "auto", "a", false, "Would you like to update a password with auto generated password")
 	rootCmd.Flags().StringVarP(&NewPass, "new-pass", "p", " ", "Your new password (cannot be an emptystring)")
+	rootCmd.Flags().BoolVarP(&GetAPassword, "get", "g", false, "Use this flag with name flag to fetch the password")
 
 }
 

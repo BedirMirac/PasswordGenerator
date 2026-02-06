@@ -9,6 +9,7 @@ import (
 )
 
 type PasswordData struct {
+	ID       int
 	Appname  string
 	Password string
 }
@@ -96,4 +97,19 @@ func Update(id int, newPass string) {
 	}
 
 	fmt.Println("Password you chose is updated successfully.")
+}
+
+func Select(name string) {
+	query := "SELECT * FROM passwords WHERE appname = ?"
+	var data PasswordData
+	err := DB.QueryRow(query, name).Scan(&data.ID, &data.Appname, &data.Password)
+	if err == sql.ErrNoRows {
+		fmt.Printf("Error: %v id caanot be found\n", name)
+		return
+	} else if err != nil {
+		log.Fatal("Error during updating the password: ", err)
+	}
+
+	fmt.Printf("ID: %d App Name: %v Password: %v\n", data.ID, data.Appname, data.Password)
+
 }
